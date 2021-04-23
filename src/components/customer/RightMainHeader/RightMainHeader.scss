@@ -1,0 +1,23 @@
+@import "../../constants/styles.scss";
+
+.RightMainHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.RightMainHeader__register {
+  color: $dark-grey;
+}
+
+.RightMainHeader__login {
+  margin: 0 20px;
+}
+
+.RightMainHeader__loginText {
+  color: $primary;
+  font-weight: bold;
+}

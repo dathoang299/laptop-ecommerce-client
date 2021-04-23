@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": ["babel", "react", "react-hooks"],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.dev.js"
+      },
+      "alias": [
+        ["actions", "./src/redux/actions"],
+        ["reducers", "./src/redux/reducers"],
+        ["selectors", "./src/redux/selectors"],
+        ["assets", "./assets"],
+        ["constants", "./src/constants"],
+        ["js", "./js"],
+        ["components", "./src/components"],
+        ["services", "./src/services"],
+        ["src", "./src"],
+        ["utils", "./src/utils"]
+      ]
+    }
+  },
+}

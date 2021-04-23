@@ -1,10 +1,11 @@
 import { combineReducers } from 'redux';
 import authReducer from './authReducer';
-import initialState from './initialState';
+import commonReducer from './commonReducer';
+import initialState from '../initialState';
 
 const appReducer = combineReducers({
   auth: authReducer(initialState.auth),
-  advanced: () => initialState.advanced,
+  common: commonReducer(initialState.common),
 });
 
 const rootReducer = (state, action) => {
